@@ -1,0 +1,59 @@
+stp mov bl ldp ret 
+stp mov adrp add adrp add adrp add blr ldp ret 
+stp mov bl ldp ret 
+mov mov mov ldr add mov movz movk movk movk movz movk movk movk movz movk movk movk bl bl 
+adrp add adrp add cmp b.eq adrp ldr cbz br ret nop 
+adrp add adrp add sub asr add asr cbz adrp ldr cbz br ret 
+stp mov str adrp ldrb cbnz bl mov strb ldr ldp ret 
+b 
+adrp add ldrb and ret 
+sub stp add adrp add adrp add adrp add adrp add adrp add adrp add adrp add adrp add adrp add adrp add adrp add mov stur stur stur stur str str str str str str bl tbnz b ldur ldrb add strb ldur ldrb tbnz b mov ldur strb ldur ldrb subs adrp add ldrb ldr str ldrb cmp b.le mov ldr str mov ldur strb ldur strb ldur ldr ldr ldr mov mov ldr mov bl ldur ldr ldr ldrb add ldr ldr ldr ldrb add ldr ldrb mov mov ldr bl b ldur ldrb tbnz b mov ldur strb mov ldr str ldur ldrb cmp b.le mov ldr str mov ldur strb ldur strb ldur ldr ldr ldr mov mov ldr mov bl ldur ldr ldr ldrb add ldr ldr ldr ldrb add ldr ldrb mov mov ldr bl b ldur ldrb cmp b.le mov ldur strb ldur ldr ldr ldr ldur ldrb mov mov ldr bl ldur ldr ldur ldrb mov ldr ldrb add ldr ldr ldrb mov ldr ldrb add ldrb mov ldr ldrb mov mov ldr bl ldp add ret 
+sub str strb mov and add ret 
+sub strh strh str strb add ret 
+sub strh strh str strb add ret 
+stp mov mov adrp add str ldr cmp cset tbnz adrp add mov strb mov bl ldp ret 
+sub str add ret 
+sub stp add adrp add mov sturb sturb mov mov bl tbnz b mov mov mov bl adrp add strb ldurb ldurb add mov mov adrp add mov mov bl ldurb add ldurb add adrp add ldrb mov mov adrp add bl ldp add ret 
+sub str str ldr add ret 
+sub stp add adrp add adrp add ldrb add strb mov mov mov mov str bl ldr ldrb cmp b.le mov ldr strb adrp add mov strb ldp add ret 
+sub stp add adrp add adrp add adrp add mov adrp add adrp add str mov mov stur stur stur str bl tbnz b ldur ldr add str ldur ldr cmp b.le mov ldur str ldur ldrb mov eor and strb mov mov mov adrp add mov str bl mov mov adrp add ldr bl bl mov str mov mov adrp add ldr and bl ldr ldrb subs mov mul mov mov bl mov sturb ldurb cmp b.ge ldr ldrb ldurb cmp b.eq ldurb mov mul add mov mov adrp add mov mov mov str str str bl ldurb ldr mul add mov mov ldr ldr bl ldurb add sturb b ldur ldrb tbnz b ldur ldr mov mov adrp add mov mov bl bl ldur mov bl tbnz b ldr ldrb cmp b.le ldr ldrb mov add strb b ldur mov bl tbnz b ldr ldrb cmp b.ge ldr ldrb add strb b ldur mov bl tbnz b ldr ldrb cmp b.eq ldr ldrb adrp add strb b bl tbnz b bl b bl bl ldp add ret 
+sub mov str strb strb ldrb and add ret 
+mov adrp add strb ret 
+mov adrp add strb ret 
+ret 
+sub stp add adrp add adrp add mov str mov mov mov mov bl ldr mov bl tbnz b adrp add mov strb ldp add ret 
+sub stp add adrp add adrp add adrp add mov stur mov mov mov mov str str bl mov mov ldr ldr bl ldur mov bl tbnz b adrp add mov strb ldp add ret 
+ret 
+mov adrp add strb ret 
+sub stp add adrp add adrp add adrp add adrp add mov stur str str bl tbnz b ldur ldr subs str ldr mov cmp b.ge mov mov mov bl cbz ldr ldrb mov orr strb b ldr ldrb mov and strb mov ldur str ldur ldr subs str ldr mov cmp b.ge mov mov mov bl cbz ldr ldrb mov orr strb b ldr ldrb mov and strb mov ldur str ldur ldr subs str ldr mov cmp b.ge mov mov mov bl cbz ldr ldrb mov orr strb b ldr ldrb mov and strb mov ldur str ldur ldr subs str ldr mov cmp b.ge mov mov mov bl cbz ldr ldrb mov orr strb b ldr ldrb mov and strb ldr ldrb mov and cmp b.ne ldr ldrb eor strb mov ldur str ldr ldrb and cbz ldur ldr subs str ldr mov cmp b.ge ldr ldrb eor strb mov ldur str adrp add mov bl tbnz b ldr ldrb mov add strb adrp add ldrb eor and strb ldr ldrb cmp b.le mov ldr strb ldp add ret 
+sub stp add adrp add adrp add ldrb and str str cbz ldr ldr mov mov adrp add mov mov bl ldr ldrb and cbz ldr ldr mov mov adrp add mov mov bl ldr ldrb and cbz ldr ldr adrp add ldrb mov mov adrp add bl ldr ldrb and cbz ldr ldr adrp add ldrb mov mov adrp add bl ldr ldrb and cbz ldr ldr adrp add ldrb mov mov adrp add and bl ldp add ret 
+sub strh strh str strb add ret 
+sub stp add adrp add mov adrp add mov mov mov sub stur stur ldur ldur mov mov mov mov stur str str str str str bl ldr ldr ldr ldr bl ldr sturb ldurb ldr subs sturb ldur sturb ldurb ldurb cmp b.ge ldur add ldurb mov mul add ldur add mov mov adrp add mov mov bl ldurb add sturb b mov sturb ldurb ldurb cmp b.ge ldurb mov sub add ldrb sturb ldurb cmp b.gt mov sturb b ldurb subs sturb ldurb cmp b.le mov sturb mov sturb ldurb cmp b.ge ldurb ldurb cmp b.ne ldurb sturb ldurb add sturb b ldur add ldurb mov mul add ldurb mul add ldur add ldurb mov mov adrp add bl ldurb add sturb b ldp add ret 
+sub mov str str str ldr strb ldr add ret 
+sub stp add adrp add adrp add adrp add adrp add adrp add adrp add mov stur stur str str str bl tbnz b ldur ldr subs str ldur ldr subs str ldur ldr mov cmp b.ge mov ldur str mov mov mov bl ldr strb ldur ldr mov cmp b.ge mov ldur str mov mov bl ldr strb ldur ldr ldr ldrb mov mul mov mov mov ldr mov str str bl ldur ldr add ldr ldrb ldr mul add mov ldr mov ldr mov bl ldur ldr ldr ldrb ldr mul mov ldr mov ldr mov bl ldur ldr add ldr ldrb ldr mul add mov ldr ldr mov bl ldp add ret 
+sub stp add adrp add adrp add mov adrp add adrp add adrp add adrp add mov stur stur str str str bl tbnz b ldur ldr subs str ldur ldr subs str ldur ldr ldr ldrb mov mul mov mov mov ldr mov str str bl ldur ldr add ldr ldrb ldr mul add mov ldr mov ldr mov bl ldur ldr ldr ldrb ldr mul mov ldr mov ldr mov bl ldur ldr add ldr ldrb ldr mul add mov ldr ldr mov bl ldur ldr mov cmp b.ge mov ldur str mov mov mov bl ldr strb ldur ldr mov cmp b.ge mov ldur str mov mov bl ldr strb ldp add ret 
+sub stp add adrp add ldr cmp str b.ne mov mov mov bl adrp add strb ldr ldr adrp add ldrb mov mov adrp add bl adrp add mov bl tbnz b ldr ldr subs str ldr ldr mov cmp b.ge mov ldr str ldp add ret 
+sub stp add adrp add mov mov adrp add adrp add ldrb mul subs mov str bl tbnz b ldr ldr subs str ldr ldr cmp b.ge adrp add ldrb orr strb mov mov adrp add mov mov bl mov sturb ldurb ldr ldr add cmp b.ge ldurb mov mov adrp add mov mov bl ldurb add sturb b mov mov bl ldp add ret 
+sub adrp add adrp add adrp add ldr ldr cmp str str str b.cs ldr ldrb add strb ldr ldr add str ldrb cmp b.le mov ldr strb ldr ldr add str add ret 
+sub stp add adrp add adrp add mov mov str str bl tbnz b ldr ldrb tbnz mov ldr strb adrp add mov strb b ldr mov bl tbnz b adrp add ldrb tbnz ldr ldrb tbnz mov adrp add strb adrp add mov strb b ldr mov bl tbnz b adrp add mov strb ldp add ret 
+sub stp str stp add sub adrp add adrp add mov mov adrp add mov mov mov mov mov adrp add adrp add adrp add sub sub sub sub sub sub ldr add sturh ldr add strh strb strb ldr add sturh strh strb strb ldr add sturh strh strb strb ldr add sturh strh strb strb ldr add sturh strh strb strb ldr add sturh strh strb strb ldrb and str str str str str cbz sub ldr ldr sub stur ldrh strh sub ldur sub stur ldrh strh ldur sub stur ldrh strh ldur ldur sub stur ldrh strh ldur ldr bl tbnz b ldr ldr subs str mov mov bl ldr ldrb and cbz sub ldr ldr sub stur ldrh strh sub ldr sub stur ldrh strh ldur sub stur ldrh strh ldur ldur sub stur ldrh strh ldur ldr bl tbnz b ldr ldr subs str mov mov bl ldr ldrb and cbz sub ldr ldr sub stur ldrh strh sub ldur add str ldrh strh ldur add str ldrh strh ldr ldr add str ldrh strh ldr ldr bl tbnz b ldr ldr subs str mov mov bl ldr ldrb and cbz sub ldr ldr add str ldrh strh sub ldr add str ldrh strh ldr add str ldrh strh ldr ldr add str ldrh strh ldr ldr bl tbnz b ldr ldr subs str mov mov bl ldr ldrb and cbz sub ldr ldr add str ldrh strh sub ldur add str ldrh strh ldr add str ldrh strh ldr ldr add str ldrh strh ldr ldr bl tbnz b ldr ldrb eor strb mov ldr str ldr str adrp add ldr add str mov mov bl ldp ldr ldp add ret 
+sub add add add add str ldr str ldrh strh str ldr str ldrh strh str ldrsh ldrsh ldrb add mov cmp str b.ge ldrsh ldrb add ldrsh mov cmp str b.le ldrsh ldrsh ldrb add mov cmp str b.ge ldrsh ldrb add ldrsh cmp cset str ldr eor and add ret 
+sub strh strh add ret 
+adrp add mov adrp add adrp add mov adrp add mov adrp add mov adrp add adrp add mov adrp add str str str str str strb strb strb ret 
+stp mov bl bl bl bl bl bl bl bl bl bl bl ldp ret 
+sub stp add adrp add adrp add mov str mov mov mov mov bl mov mov bl ldr mov bl tbnz b adrp add mov strb ldp add ret 
+sub stp add adrp add mov mov adrp add mov stur mov mov str mov mov mov str bl ldur ldr bl ldr mov bl tbnz b adrp add mov strb ldp add ret 
+sub stp add adrp add mov str bl ldr mov bl ldr bl ldp add ret 
+sub str add ret 
+sub str strb add ret 
+sub str add ret 
+sub stp add adrp add mov str bl tbnz b ldr bl ldr bl adrp add ldrb mov mov mul adrp add add ldr str blr ldr bl mov ldr strb adrp add ldr subs str cbnz mov mov bl ldp add ret 
+sub adrp add str ldr add str mov and add ret 
+sub str add ret 
+sub str add ret 
+sub str add ret 
+sub str str add ret 
+sub stp add adrp add stur bl bl adrp add ldrb tbnz b bl b ldur ldp add ret 
+stp mov stp adrp adrp add add stp sub str mov mov asr mov bl cbz str mov ldr mov mov mov add blr cmp b.ne ldr ldp ldp ldr ldp ret 
+ret 
+stp mov ldp ret 

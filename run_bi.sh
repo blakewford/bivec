@@ -6,8 +6,8 @@ if [[ $# -lt 8 || $# -gt 14 ]]; then
   exit
 fi
 
-srcLang="de"
-tgtLang="en"
+srcLang="arm64"
+tgtLang="x86"
 
 remake=$1
 outputDir=$2
@@ -87,7 +87,7 @@ execute_check $outputDir "mkdir -p $outputDir"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "# Script dir = $SCRIPT_DIR"
 execute_check "" "cd $SCRIPT_DIR"
-args="-src-train $trainPrefix.de -tgt-train $trainPrefix.en -src-lang $srcLang -tgt-lang $tgtLang -output $outputDir/out -cbow $isCbow -size $dim -window 5 $negStr -threads $numThreads -binary 0 -iter $numIter -eval 1 $alphaStr $sampleStr $monoStr $otherOptStr"
+args="-src-train $trainPrefix.arm64 -tgt-train $trainPrefix.x86 -src-lang $srcLang -tgt-lang $tgtLang -output $outputDir/out -cbow $isCbow -size $dim -window 5 $negStr -threads $numThreads -binary 0 -iter $numIter -eval 1 $alphaStr $sampleStr $monoStr $otherOptStr"
 
 if [ $remake -eq 1 ]
 then

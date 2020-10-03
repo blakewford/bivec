@@ -1,0 +1,59 @@
+sub mov test je callq add retq
+push mov movabs movabs callq pop retq nop
+push mov callq pop retq nopl
+xor mov pop mov and push push mov mov mov callq hlt nopl
+push mov cmp mov je mov test je pop mov jmpq nopl pop retq nopw
+mov push sub mov sar mov shr add sar je mov test je pop mov jmpq nopl pop retq nopw
+cmpb jne push mov callq movb pop retq nopl repz nopl nopw 
+push mov pop jmp nopw 
+push mov mov and movzbl pop retq  
+push mov sub movabs mov callq test jne jmpq mov add mov testb je movb movzbl sub movslq movzbl mov movzbl cmp jle movl movb movb movabs mov mov mov mov mov movswl mov mov mov movswl callq movabs mov movzbl add mov mov movzbl add mov movswl movswl movzbl callq jmpq testb je movb movl movzbl cmp jle movl movb movb movabs mov mov mov mov mov movswl mov mov mov movswl callq movabs mov movzbl add mov mov movzbl add mov movswl movswl movzbl callq jmpq movzbl cmp jle movb movabs mov mov mov mov movswl movswl movzbl callq movabs mov movzbl mov movzbl add mov mov movzbl mov movzbl add mov movzbl mov movswl movswl movzbl callq jmpq add pop retq  
+push mov mov mov mov mov and movzbl pop retq nopl 
+push mov mov mov mov mov mov mov mov pop retq  
+push mov mov mov mov mov mov mov mov pop retq  
+push mov movl cmpl jge mov movb callq pop retq  
+push mov mov pop retq nopl 
+push mov sub mov mov movabs mov mov mov callq test jne jmpq xor mov mov mov callq mov mov movabs xor movzbl mov movzbl add mov movswl mov mov mov movswl callq movabs movzbl add mov movzbl add mov movswl movswl movzbl callq add pop retq nopl 
+push mov mov mov mov pop retq  
+push mov mov mov movabs xor mov add mov callq movzbl cmp jle movb movb pop retq  
+push mov sub movabs mov movl callq test jne jmpq mov add mov cmpl jle movl mov xor and mov mov xor movabs mov mov callq mov mov movabs xor callq callq mov mov movabs and movzbl callq mov movzbl sub shl mov movzbl callq movb movzbl cmp jge movzbl movzbl cmp je mov movabs xor movzbl shl add mov movswl callq mov movabs xor movzbl shl add mov movswl callq jmpq mov add mov jmpq testb je mov movabs xor mov mov movswl callq callq movabs mov callq test jne jmpq movzbl cmp jle mov add mov jmpq movabs mov callq test jne jmpq movzbl cmp jge mov add mov jmpq movabs mov callq test jne jmpq movzbl cmp je mov mov jmpq callq test jne jmpq callq jmpq callq callq jmpq jmpq jmpq add pop retq xchg 
+push mov mov mov mov movb mov and movzbl pop retq nopl 
+push mov movb pop retq xchg 
+push mov movb pop retq xchg 
+push mov pop retq nopw 
+push mov mov xor movabs mov mov callq movabs mov callq test jne jmpq movb pop retq nopl 
+push mov mov xor movabs mov mov callq mov mov movabs xor callq movabs mov callq test jne jmpq movb pop retq  
+push mov pop retq nopw 
+push mov movb pop retq xchg 
+push mov movabs mov callq test jne jmpq mov sub mov cmpl jge xor mov mov mov callq cmp je movzbl mov or mov mov jmpq movzbl mov and mov mov movl mov sub mov cmpl jge xor mov mov mov callq cmp je movzbl mov or mov mov jmpq movzbl mov and mov mov movl mov sub mov cmpl jge xor mov mov mov callq cmp je movzbl mov or mov mov jmpq movzbl mov and mov mov movl mov sub mov cmpl jge xor mov mov mov callq cmp je movzbl mov or mov mov jmpq movzbl mov and mov mov movzbl and cmp jne movzbl xor mov mov movl movzbl and cmp je mov sub mov cmpl jge movzbl xor mov mov movl jmpq jmpq movabs mov callq test jne jmpq mov add mov mov xor and mov movzbl cmp jle movb pop retq  
+push mov sub movzbl and cmp je mov movabs xor mov mov movswl callq movzbl and cmp je mov movabs xor mov mov movswl callq movzbl and cmp je mov movabs mov mov movswl movzbl callq movzbl and cmp je mov movabs mov mov movswl movzbl callq movzbl and cmp je mov movabs mov mov mov and movswl mov mov mov movzbl callq add pop retq  
+push mov mov mov mov mov mov mov mov pop retq  
+push mov sub movabs xor mov mov mov mov mov mov movswl movswl callq mov lea mov callq mov movb movsbl sub mov mov movb mov movzbl movsbl cmp jge movabs xor mov add movzbl imul add mov mov add mov movswl movswl callq mov add mov jmpq movb movzbl movsbl cmp jge movzbl mov mov mov movsbl cmp jg movb jmpq movsbl sub mov mov movsbl cmp jle movb jmpq movb movzbl cmp jge movsbl movzbl cmp jne mov mov jmpq mov add mov jmpq movabs mov add movsbl imul add movzbl imul add mov mov add mov movswl mov mov mov movswl movzbl callq mov add mov jmpq add pop retq  
+push mov mov mov mov mov movb mov pop retq nopl 
+push mov sub movabs mov callq test jne jmpq mov sub mov mov sub mov cmpl jge xor mov mov mov movl callq mov mov cmpl jge mov mov mov mov movl callq mov mov xor movabs mov mov movzbl shl mov movswl mov mov mov movzbl callq xor movabs mov add mov movzbl shl add mov movswl movzbl callq xor movabs mov mov movzbl shl mov movswl movzbl callq xor movabs mov add mov movzbl shl add mov movswl movzbl callq add pop retq  
+push mov sub movabs mov callq test jne jmpq mov sub mov mov sub mov mov movabs mov mov movzbl shl mov movswl mov mov mov movzbl callq mov movabs mov add mov movzbl shl add mov movswl movzbl callq mov movabs mov mov movzbl shl mov movswl movzbl callq mov movabs mov add mov movzbl shl add mov movswl movzbl callq cmpl jge xor mov mov mov movl callq mov mov cmpl jge mov mov mov mov movl callq mov mov add pop retq 
+push mov cmpl jne xor mov mov mov callq mov mov mov movabs mov mov movswl movzbl callq movabs mov callq test jne jmpq mov sub mov cmpl jge movl pop retq nopw 
+push mov sub movabs mov movzbl shl sub mov movzbl callq test jne jmpq mov add mov cmpl jge movzbl or mov mov mov mov movabs xor callq movb movzbl mov add cmp jge mov movabs xor movzbl mov movswl callq mov add mov jmpq mov mov callq add pop retq  
+push mov mov cmp jae movzbl add mov mov mov add mov movzbl cmp jle movb jmpq mov add mov pop retq nopl 
+push mov movabs mov callq test jne jmpq testb jne movb movb jmpq movabs mov callq test jne jmpq testb jne testb jne movb movb jmpq movabs mov callq test jne jmpq movb jmpq jmpq pop retq nop 
+push mov sub mov add mov mov mov add mov mov movb movb mov add mov mov movw movb movb mov add mov mov movw movb movb mov add mov mov movw movb movb mov add mov mov movw movb movb mov add mov mov movw movb movb movzbl and cmp je movabs mov mov mov mov mov mov mov mov mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov callq test jne jmpq mov mov mov sub mov callq movzbl and cmp je movabs mov mov mov mov mov mov mov mov mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov callq test jne jmpq mov mov mov sub mov callq movzbl and cmp je movabs mov mov mov mov mov mov mov mov mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov callq test jne jmpq mov mov mov sub mov callq movzbl and cmp je movabs mov mov mov mov mov mov mov mov mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov callq test jne jmpq mov mov mov sub mov callq movzbl and cmp je movabs mov mov mov mov mov mov mov mov mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov movzwl mov shl or mov mov mov mov mov mov callq test jne jmpq mov mov movzbl xor mov mov movl movl mov add mov callq add pop retq  
+push mov mov mov mov shr mov mov mov mov mov mov mov shr mov mov mov mov mov mov mov mov mov movswl movswl movzbl add cmp mov jge mov movswl movzbl add movswl cmp mov jle mov movswl movswl movzbl add cmp mov jge movswl movzbl add movswl cmp setle mov mov xor and movzbl pop retq nopw 
+push mov mov mov mov mov pop retq  
+push mov movl movl movq movq movl movb movb movb pop retq nopw 
+push mov callq callq callq callq callq callq callq callq callq callq callq pop retq nopl 
+push mov mov mov movabs xor callq mov mov callq movabs mov callq test jne jmpq movb pop retq nopl 
+push mov mov mov movabs xor callq mov mov callq movabs mov callq test jne jmpq movb pop retq nopl 
+push mov movabs callq movabs mov callq movabs callq pop retq nopl 
+push mov mov pop retq nopw 
+push mov mov mov mov pop retq 
+push mov mov pop retq nopw 
+push mov movabs callq test jne jmpq movabs callq movabs callq movzbl mov callq movabs callq movb mov mov add mov cmp jne xor callq pop retq nopl 
+push mov mov mov mov add mov and movzbl pop retq  
+push mov mov pop retq nopw 
+push mov mov pop retq nopw 
+push mov mov pop retq nopw 
+push mov mov mov pop retq xchg 
+push mov sub movabs movl callq callq testb je callq jmpq mov add pop retq nopw xchg 
+push push mov push push lea push lea push mov mov sub sub sar callq test je xor nopl mov mov mov callq add cmp jne add pop pop pop pop pop pop retq nop nopw 
+repz retq
+sub add retq

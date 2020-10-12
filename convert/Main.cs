@@ -42,7 +42,7 @@ public class PrepAsm
 
             foreach(String line in program)
             {
-                Int32 index = find(line);
+                Int32 index = find(line.ToLower());
                 if (index != -1)
                 {
                     Console.WriteLine(arm64[index]);
@@ -70,5 +70,25 @@ public class PrepAsm
     {
         string[] tokens = line.Split('\t');
         Console.Write(tokens[2].Split()[0] + " ");
+    }
+
+    private void ngrams()
+    {
+        Int32 ndx = 0;
+        Int32 grams = Int32.Parse(Args[1])-1;
+        String[] lines = File.ReadAllLines(Args[0]);
+        foreach(String line in lines)
+        {
+            if(ndx < lines.Length-grams)
+            {
+                String output = line;
+                for(Int32 i = 1; i <= grams; i++)
+                {
+                    output += "-" + lines[ndx+i];
+                }
+                Console.WriteLine(output);
+                ndx++;
+            }
+        }
     }
 }
